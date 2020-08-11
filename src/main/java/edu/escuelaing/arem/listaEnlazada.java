@@ -10,7 +10,7 @@ public class listaEnlazada {
 
 	public listaEnlazada() {
 		this.size=0;
-		this.head = new Node(0,null,size);
+		this.head = new Node(0,null,null,size);
 	}
 	
 	public void add(double valor) {
@@ -20,13 +20,16 @@ public class listaEnlazada {
 			size+=1;
 		}	
 		else {
-			Node node=new Node(valor,null,size);
+			Node node=new Node(valor,null,null,size);
+			if( 0 < size) {
+				node.setPriorNode(this.getNode(node.getIndex()-1));
+			}
 			size+=1;
 			Node nextNode = this.head;
-			while(nextNode.getNodeReference() != null) {
-				nextNode= nextNode.getNodeReference();
+			while(nextNode.getNextNode() != null) {
+				nextNode= nextNode.getNextNode();
 			}
-			nextNode.setNodeReference(node);
+			nextNode.setNextNode(node);
 			tail = node;
 		}
 	}
@@ -41,7 +44,7 @@ public class listaEnlazada {
 			else {
 				System.out.println(" }");
 			}
-			nextNode= nextNode.getNodeReference();
+			nextNode= nextNode.getNextNode();
 		}
 	}
 	public int size() {
@@ -56,7 +59,7 @@ public class listaEnlazada {
 				break;
 			}
 			else {
-				nextNode= nextNode.getNodeReference(); 
+				nextNode= nextNode.getNextNode(); 
 			}
 		}
 		return res;
@@ -71,7 +74,7 @@ public class listaEnlazada {
 				break;
 			}
 			else {
-				nextNode= nextNode.getNodeReference(); 
+				nextNode= nextNode.getNextNode(); 
 			}
 		}
 		return res;
@@ -89,7 +92,7 @@ public class listaEnlazada {
 		Node nextNode = this.head;
 		for(int i = 0;i < size ; i++) {
 			acum+=nextNode.getData();
-			nextNode= nextNode.getNodeReference(); 
+			nextNode= nextNode.getNextNode(); 
 			
 		}
 		return acum/size;
@@ -101,7 +104,7 @@ public class listaEnlazada {
 		Node nextNode = this.head;
 		for(int i = 0;i < size ; i++) {
 			acum+=Math.pow(nextNode.getData()-this.getMean(),2);
-			nextNode= nextNode.getNodeReference(); 
+			nextNode= nextNode.getNextNode(); 
 			
 		}
 		return  Math.sqrt((acum/(size-1)));
@@ -112,32 +115,35 @@ public class listaEnlazada {
 		if(node.getIndex() == size-1) {
 			size-= 1;
 			Node base = this.getNode(node.getIndex()-1);
-			base.setNodeReference(null);
+			base.setNextNode(null);
 			this.tail = base;
 		}
 		else {
-			while(nextNode.getNodeReference() != null) {
+			while(nextNode.getNextNode() != null) {
 				if(node.equals(nextNode)) {
 					eliminated = true;
 					size-= 1;
 					if(node.getIndex() == 0) {
-						this.head = head.getNodeReference();
+						this.head = head.getNextNode();
 						head.setIndex(0);
+						head.setPriorNode(null);
 					}
 					else {
 						Node base = this.getNode(node.getIndex()-1);
-						base.setNodeReference(node.getNodeReference());
-						base.getNodeReference().setIndex(base.getIndex()+1);
+						Node next = this.getNode(node.getIndex()+1);
+						base.setNextNode(node.getNextNode());
+						next.setPriorNode(node.getPriorNode());
+						base.getNextNode().setIndex(base.getIndex()+1);
 					}
-					nextNode= nextNode.getNodeReference();
+					nextNode= nextNode.getNextNode();
 				}
 				else {
 					if(eliminated) {
-						nextNode= nextNode.getNodeReference();
+						nextNode= nextNode.getNextNode();
 						nextNode.setIndex(nextNode.getIndex()-1);
 					}
 					else {
-						nextNode= nextNode.getNodeReference();
+						nextNode= nextNode.getNextNode();
 					}
 				}
 				

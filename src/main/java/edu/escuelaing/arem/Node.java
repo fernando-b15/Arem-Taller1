@@ -12,13 +12,15 @@ public class Node {
 	/**
 	 * 
 	 */
-	private Node nodReference;
+	private Node nextNode;
+	private Node priorNode;
 	private double data;
 	private int index;
-	public Node(double data,Node reference,int index) {
+	public Node(double data,Node prior,Node next,int index) {
 		this.data=data;
 		this.index=index;
-		this.nodReference=reference;
+		this.nextNode=prior;
+		this.priorNode=next;
 	}
 	
 	public double getData() {
@@ -37,13 +39,22 @@ public class Node {
 		this.index=newIndex;
 	}
 	
-	public Node getNodeReference() {
-		return this.nodReference;
+	public Node getNextNode() {
+		return this.nextNode;
 	}
 	
-	public void setNodeReference(Node newReference) {
+	public void setNextNode(Node newNextNode) {
 		
-		this.nodReference=newReference;
+		this.nextNode=newNextNode;
+	}
+	
+	public Node getPriorNode() {
+		return this.priorNode;
+	}
+	
+	public void setPriorNode(Node newPriorNode) {
+		
+		this.priorNode=newPriorNode;
 	}
 
 }

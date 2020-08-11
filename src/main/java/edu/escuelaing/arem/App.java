@@ -29,6 +29,7 @@ public class App
 				list.print();
 				System.out.println("Mean : "+formato.format(list.getMean()));
 				System.out.println("StandardDesviation : "+formato.format(list.getStandardDesviation()));
+				
 
 			}
 			lector.close();
