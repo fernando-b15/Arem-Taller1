@@ -6,6 +6,7 @@ public class listaEnlazada {
 	private Node tail;
 	private int size;
 	
+	
 
 	public listaEnlazada() {
 		this.size=0;
@@ -38,7 +39,7 @@ public class listaEnlazada {
 				System.out.print(" ; ");
 			}
 			else {
-				System.out.print(" }");
+				System.out.println(" }");
 			}
 			nextNode= nextNode.getNodeReference();
 		}
@@ -82,6 +83,28 @@ public class listaEnlazada {
 	
 	public Node getTail() {
 		return this.tail;
+	}
+	public double getMean() {
+		double acum = 0;
+		Node nextNode = this.head;
+		for(int i = 0;i < size ; i++) {
+			acum+=nextNode.getData();
+			nextNode= nextNode.getNodeReference(); 
+			
+		}
+		return acum/size;
+		
+	}
+	
+	public double getStandardDesviation() {
+		double acum = 0;
+		Node nextNode = this.head;
+		for(int i = 0;i < size ; i++) {
+			acum+=Math.pow(nextNode.getData()-this.getMean(),2);
+			nextNode= nextNode.getNodeReference(); 
+			
+		}
+		return  Math.sqrt((acum/(size-1)));
 	}
 	public void remove(Node node) {
 		Node nextNode = this.head;
