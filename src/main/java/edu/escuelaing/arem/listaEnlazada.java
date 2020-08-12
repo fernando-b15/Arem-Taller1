@@ -6,12 +6,21 @@ public class listaEnlazada {
 	private Node tail;
 	private int size;
 	
-	
+	/**
+     *Este metodo es el constructor de la estructura de datos de lista enlazada doble 
+     *
+     */
 
 	public listaEnlazada() {
 		this.size=0;
 		this.head = new Node(0,null,null,size);
 	}
+	
+	/**
+     * Este metodo adiciona un nodo al final de la lista
+     *
+     * @param valor es el valor real del nuevo nodo a adicionar a la lista
+     */
 	
 	public void add(double valor) {
 		if(this.size == 0) {
@@ -33,6 +42,11 @@ public class listaEnlazada {
 			tail = node;
 		}
 	}
+	
+	/**
+     * Este metodo printea la lista enlazada mostrando sus respectivos indices y el valor real que tiene asignado cada metodo
+     */
+	
 	public void print() {
 		Node nextNode = this.head;
 		System.out.print("LinkedList = { ");
@@ -47,23 +61,21 @@ public class listaEnlazada {
 			nextNode= nextNode.getNextNode();
 		}
 	}
+	
+	/**
+     * Este metodo retorna la longitud de la lista
+     *  @Return la longitud de la lista
+     */
+	
 	public int size() {
 		return size;
 	}
-	public double get(int index) {
-		double res = 0;
-		Node nextNode = this.head;
-		for(int i=0;i<size;i++) {
-			if(nextNode.getIndex() == index) {
-				res = nextNode.getData();
-				break;
-			}
-			else {
-				nextNode= nextNode.getNextNode(); 
-			}
-		}
-		return res;
-	}
+	
+	/**
+     * Este metodo retorna la longitud de la lista
+     *  @Return la longitud de la lista
+     */
+	 
 	
 	public Node getNode(int index) {
 		Node res = null;

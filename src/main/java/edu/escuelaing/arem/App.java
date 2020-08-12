@@ -6,12 +6,18 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
- * Hello world!
+ * Esta aplicacion es para calcular datos estadisticos como la media y desviacion estandar de numeros reales contenidos en un archivo txt
  *
+ * @author Fernando Barrera Barrera
  */
 public class App 
 {
 	private static DecimalFormat formato = new DecimalFormat("0.00");
+	/**
+     * Main methot este metodo lee un archivo txt que contiene numeros reales para las operaciones de la aplicacion 
+     *
+     * @param args Args
+     */
     public static void main( String[] args )
     {
     	try {
