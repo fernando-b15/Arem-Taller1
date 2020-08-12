@@ -1,5 +1,10 @@
 package edu.escuelaing.arem;
 
+/**
+ * @author Fernando Barrera Barrera
+ *
+ */
+
 public class listaEnlazada {
 	
 	private Node head;
@@ -64,7 +69,8 @@ public class listaEnlazada {
 	
 	/**
      * Este metodo retorna la longitud de la lista
-     *  @Return la longitud de la lista
+     * 
+     * @return la longitud de la lista
      */
 	
 	public int size() {
@@ -72,8 +78,10 @@ public class listaEnlazada {
 	}
 	
 	/**
-     * Este metodo retorna la longitud de la lista
-     *  @Return la longitud de la lista
+     * Este metodo devuelve un nodo especifico dado su posicion en la lista
+     * 
+     * @param index el indice del nodo que se solicita dentro de la lista
+     * @return la longitud de la lista
      */
 	 
 	
@@ -92,13 +100,32 @@ public class listaEnlazada {
 		return res;
 	}
 	
+	/**
+     * Este metodo retorna el nodo que esta en la cabeza de la lista
+     * 
+     * @return la cabeza de la lista
+     */
+	
 	public Node getHead() {
 		return this.head;
 	}
 	
+	/**
+     * Este metodo retorna el nodo que esta en la cola de la lista
+     * 
+     * @return la cola de la lista
+     */
+	
 	public Node getTail() {
 		return this.tail;
 	}
+	
+	/**
+     * Este metodo retorna el valor de la media aritmetica de los valores dentro de la lista 
+     * 
+     * @return el valor de la media aritmetica de la lista
+     */
+	
 	public double getMean() {
 		double acum = 0;
 		Node nextNode = this.head;
@@ -111,6 +138,12 @@ public class listaEnlazada {
 		
 	}
 	
+	/**
+     * Este metodo retorna el valor de la desviacion estandar  de los valores dentro de la lista 
+     * 
+     * @return el valor de la desviacion estandar de la lista
+     */
+	
 	public double getStandardDesviation() {
 		double acum = 0;
 		Node nextNode = this.head;
@@ -121,6 +154,13 @@ public class listaEnlazada {
 		}
 		return  Math.sqrt((acum/(size-1)));
 	}
+	
+	/**
+     * Este metodo elimina el nodo dado de la lista 
+     * 
+     * @param node el nodo a eliminar de la lista
+     */
+	
 	public void remove(Node node) {
 		Node nextNode = this.head;
 		boolean eliminated = false;

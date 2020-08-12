@@ -34,7 +34,7 @@ public class Node {
 	/**
      *Este metodo retorna el valor real del nodo
      *
-     * @Return el valor real del nodo
+     *@return el valor real del nodo
      *
      */
 	
@@ -45,7 +45,7 @@ public class Node {
 	/**
      *Este metodo setea el valor real del nodo
      *
-     * @Param newData es el nuevo valor real para setear el nodo
+     *@param newData es el nuevo valor real para setear el nodo
      *
      */ 
 	
@@ -56,7 +56,7 @@ public class Node {
 	/**
      *Este metodo devuelve el indice del nodo actual dentro de la lista
      *
-     * @Return indice del nodo actual en la lista
+     *@return indice del nodo actual en la lista
      *
      */ 
 	
@@ -67,7 +67,7 @@ public class Node {
 	/**
      *Este metodo setea el valor del indice del nodo dentro de la lista
      *
-     * @Param newIndex el nuevo index del nodo dentro de la lista
+     *@param newIndex el nuevo index del nodo dentro de la lista
      *
      */ 
 	
@@ -78,7 +78,7 @@ public class Node {
 	/**
      *Este metodo retorna el siguiente nodo enlazado al nodo actual
      *
-     * @Return el siguiente nodo enlazado al nodo actual
+     *@return el siguiente nodo enlazado al nodo actual
      *
      */ 
 	
@@ -89,7 +89,7 @@ public class Node {
 	/**
      *Este metodo setea el siguiente nodo enlazado al nodo actual
      *
-     * @Param newNextNode el nuevo siguiente nodo enlazado al nodo actual
+     *@param newNextNode el nuevo siguiente nodo enlazado al nodo actual
      *
      */ 
 	
@@ -101,7 +101,7 @@ public class Node {
 	/**
      *Este metodo retorna el  nodo anterior enlazado al nodo actual
      *
-     * @Return el anterior nodo enlazado al nodo actual
+     *@return el anterior nodo enlazado al nodo actual
      *
      */ 
 	
@@ -112,7 +112,7 @@ public class Node {
 	/**
      *Este metodo setea el nodo anterior enlazado al nodo actual
      *
-     * @Param newPriorNode el nuevo nodo anterior enlazado al nodo actual
+     *@param newPriorNode el nuevo nodo anterior enlazado al nodo actual
      *
      */ 
 	

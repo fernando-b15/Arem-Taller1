@@ -1,0 +1,17 @@
+cmd.exe
+/X
+/C
+""C:\Program Files\Java\jdk1.8.0_231\jre\..\bin\javadoc.exe" @options @argfile"
+C:\Users\jm_14\Downloads\Arem-Taller1\target\site\apidocs\allclasses-frame.html = 1597195525107
+C:\Users\jm_14\Downloads\Arem-Taller1\target\site\apidocs\allclasses-noframe.html = 1597195525109
+C:\Users\jm_14\Downloads\Arem-Taller1\target\site\apidocs\argfile = 1597195523831
+C:\Users\jm_14\Downloads\Arem-Taller1\target\site\apidocs\constant-values.html = 1597195525062
+C:\Users\jm_14\Downloads\Arem-Taller1\target\site\apidocs\deprecated-list.html = 1597195525105
+C:\Users\jm_14\Downloads\Arem-Taller1\target\site\apidocs\help-doc.html = 1597195525116
+C:\Users\jm_14\Downloads\Arem-Taller1\target\site\apidocs\index-all.html = 1597195525100
+C:\Users\jm_14\Downloads\Arem-Taller1\target\site\apidocs\index.html = 1597195525112
+C:\Users\jm_14\Downloads\Arem-Taller1\target\site\apidocs\options = 1597195523829
+C:\Users\jm_14\Downloads\Arem-Taller1\target\site\apidocs\overview-tree.html = 1597195525092
+C:\Users\jm_14\Downloads\Arem-Taller1\target\site\apidocs\package-list = 1597195525033
+C:\Users\jm_14\Downloads\Arem-Taller1\target\site\apidocs\script.js = 1597195525120
+C:\Users\jm_14\Downloads\Arem-Taller1\target\site\apidocs\stylesheet.css = 1597195525119
