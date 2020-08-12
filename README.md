@@ -60,6 +60,8 @@ Para obtener la documentacion de la aplicacion , ingrese el siguinete codigo
 mvn javadoc:javadoc
 ~~~
 
+![image4](https://github.com/fernando-b15/Arem-Taller1/blob/master/image/javadoc1.PNG)
+
 para acceder a la documentacion de la apliacacion ingrese al siguiente enlace [apidocs](https://github.com/fernando-b15/Arem-Taller1/tree/master/apidocs) 
 
 # Licencia
