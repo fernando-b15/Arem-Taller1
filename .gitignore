@@ -1,2 +1,13 @@
-*/target/**
-*/bin/**
+target
+./target
+.gitold
+/target/
+.#*
+*.log
+.classpath
+.project
+.idea/
+bin/
+.bin/
+.settings/
+*.iml
