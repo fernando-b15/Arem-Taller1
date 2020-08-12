@@ -30,6 +30,8 @@ Ahora para realizar la compilacio y empaquetacion de la aplicacion ,ingrese el s
 mvn package
 ~~~
 
+![image1](https://github.com/fernando-b15/Arem-Taller1/blob/master/image/package2.PNG)
+
 # Pruebas
 
 Para realizar la pruebas asociadas a la aplicacion ,ingrese el siguiente codigo
@@ -37,6 +39,8 @@ Para realizar la pruebas asociadas a la aplicacion ,ingrese el siguiente codigo
 ~~~
 mvn test
 ~~~
+
+![image2](https://github.com/fernando-b15/Arem-Taller1/blob/master/image/test1.PNG)
 
 # Ejecucion
 
@@ -46,6 +50,8 @@ Para la ejecucion del programa desde linea de comandos , ingrese el siguinete co
 java -cp target/Arem-Taller1-1.0-SNAPSHOT.jar edu.escuelaing.arem.App
 ~~~
 
+![image3](https://github.com/fernando-b15/Arem-Taller1/blob/master/image/deploy1.PNG)
+
 # Documentacion
 
 Para obtener la documentacion de la aplicacion , ingrese el siguinete codigo
@@ -53,6 +59,8 @@ Para obtener la documentacion de la aplicacion , ingrese el siguinete codigo
 ~~~
 mvn javadoc:javadoc
 ~~~
+
+para acceder a la documentacion de la apliacacion ingrese al siguiente enlace [apidocs](https://github.com/fernando-b15/Arem-Taller1/tree/master/apidocs) 
 
 # Licencia
 
