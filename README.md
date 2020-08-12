@@ -60,7 +60,7 @@ La aplicacion cuenta con la siguiente [MIT LICENCE](https://github.com/fernando-
 
 # Autor
 
-   * [Fernanado Barrera Barrera](https://github.com/fernando-b15) 
+   * [Fernanado Barrera Barrera](https://github.com/fernando-b15) :guitar:
 
 
 
