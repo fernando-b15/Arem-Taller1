@@ -64,6 +64,10 @@ mvn javadoc:javadoc
 
 para acceder a la documentacion de la apliacacion ingrese al siguiente enlace [apidocs](https://github.com/fernando-b15/Arem-Taller1/tree/master/apidocs) 
 
+# Informe del taller
+
+Para conocer mas a fondo el desarrollo del taller acceda al [Informe](https://github.com/fernando-b15/Arem-Taller1/blob/master/Arem-Taller1.pdf)
+
 # Licencia
 
 La aplicacion cuenta con la siguiente [MIT LICENCE](https://github.com/fernando-b15/Arem-Taller1/blob/master/LICENSE) 
