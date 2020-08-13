@@ -66,7 +66,7 @@ para acceder a la documentacion de la apliacacion ingrese al siguiente enlace [a
 
 # Informe del taller
 
-Para conocer mas a fondo el desarrollo del taller acceda al [Informe](https://github.com/fernando-b15/Arem-Taller1/blob/master/Arem-Taller1.pdf)
+Para conocer mas a fondo el desarrollo del taller acceda al [Informe](https://github.com/fernando-b15/Arem-Taller1/blob/master/Arem_Taller1.pdf)
 
 # Licencia
 
